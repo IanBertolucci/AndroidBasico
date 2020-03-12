@@ -11,4 +11,21 @@
     <string name="btn2">Sim</string>
     <string name="btn3">Nao</string>
 
+    <string name="rotuloCurso">Marque o(s) curso(s) de interesse</string>
+    <string name="rotuloInfo">Deseja receber mais informações?</string>
+    <string name="checkbox1">Android básico</string>
+    <string name="checkbox2">Android intermediário</string>
+    <string name="checkbox3">Android avançado</string>
+    <string name="txtSim">Sim</string>
+    <string name="txtNao">Não</string>
+    <string name="btnOk">OK</string>
+    <string name="txtResposta">Resposta:</string>
+
+    <string name="titulo">1º - selecione a área de atuação</string>
+    <string name="txtSelecionar">Selecionar</string>
+    <string name="txtRotulo">2º - Informe as suas habilidades</string>
+    <string name="txtAdd">Add +</string>
+    <string name="txtObs">Obs.: clique no item para removê-lo</string>
+
+
 </resources>

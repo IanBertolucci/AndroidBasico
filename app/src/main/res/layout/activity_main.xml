@@ -1,45 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+        android:orientation="vertical"
         tools:context=".MainActivity">
 
-    <ImageView
-            android:id="@+id/imgAndroid"
+    <TextView
+            android:id="@+id/rotuloCurso"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:src="@mipmap/ic_launcher" />
+            android:text="@string/rotuloCurso" />
+
+    <CheckBox
+            android:id="@+id/checkbox1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/checkbox1" />
+
+    <CheckBox
+            android:id="@+id/checkbox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/checkbox2" />
+
+    <CheckBox
+            android:id="@+id/checkbox3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="@string/checkbox3" />
 
     <TextView
-            android:id="@+id/txtTitulo"
+            android:id="@+id/rotuloInfo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_toStartOf="@id/btnOK"
-            android:layout_toEndOf="@id/imgAndroid"
-            android:text="@string/txt_titulo"
-            android:textSize="24sp" />
+            android:text="@string/rotuloInfo" />
 
-    <TextView
-            android:id="@+id/txtSubtitulo"
+    <RadioGroup
+            android:id="@+id/radioGroup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/txtTitulo"
-            android:layout_toEndOf="@id/imgAndroid"
-            android:text="@string/txt_subtitulo"
-            android:textSize="24sp" />
+            android:layout_marginBottom="10dp">
+
+        <RadioButton
+                android:id="@+id/radioSim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txtSim" />
+
+        <RadioButton
+                android:id="@+id/radioNao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txtNao" />
+    </RadioGroup>
 
     <Button
-            android:id="@+id/btnOK"
+            android:id="@+id/btnOk"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:text="@string/txt_btn_ok" />
+            android:layout_marginBottom="10dp"
+            android:text="@string/btnOk" />
+
+    <TextView
+            android:id="@+id/txtResultado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txtResposta" />
 
 
-</RelativeLayout>
+</LinearLayout>
