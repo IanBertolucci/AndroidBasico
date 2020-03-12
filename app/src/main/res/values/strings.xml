@@ -26,6 +26,11 @@
     <string name="txtRotulo">2º - Informe as suas habilidades</string>
     <string name="txtAdd">Add +</string>
     <string name="txtObs">Obs.: clique no item para removê-lo</string>
+    <string name="txtadicionar">Adicionar</string>
+    <string name="txtdeletar">Deletar</string>
+    <string name="txteditar">Editar</string>
+    <string name="txtsalvar">Salvar</string>
+    <string name="txtajuda">Ajuda</string>
 
 
 </resources>
