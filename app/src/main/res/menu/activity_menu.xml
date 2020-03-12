@@ -17,4 +17,11 @@
     <item android:title="@string/txtajuda"
             android:id="@+id/menuAjuda"
             android:icon="@android:drawable/ic_menu_help"/>
+    <item android:title="Item" >
+        <menu >
+            <item android:title="Item" />
+            <item android:title="Item" />
+            <item android:title="Item" />
+        </menu>
+    </item>
 </menu>
