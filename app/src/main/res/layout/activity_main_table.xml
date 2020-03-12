@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="1, 2">
+
+    <TableRow>
+
+        <TextView
+                android:id="@+id/txtNome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nome_pessoa"
+                android:textSize="24sp" />
+
+        <EditText
+                android:id="@+id/editNome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:layout_span="2"/>
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+                android:id="@+id/txtIdiomas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nome_idioma"
+                android:textSize="24sp" />
+
+        <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_ingles"
+                android:textSize="24sp"
+                android:id="@+id/checkboxIngles"/>
+
+        <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_alemao"
+                android:textSize="24sp"
+                android:id="@+id/checkboxAlemao"/>
+
+    </TableRow>
+</TableLayout>
