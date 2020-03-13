@@ -13,4 +13,24 @@
             android:text="TextView"
             tools:layout_editor_absoluteX="140dp"
             tools:layout_editor_absoluteY="226dp" />
+
+    <Toolbar
+            android:id="@+id/toolbarPrincipal"
+            android:layout_width="409dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="68dp"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            tools:layout_editor_absoluteX="140dp"
+            tools:layout_editor_absoluteY="226dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
