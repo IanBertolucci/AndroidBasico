@@ -22,10 +22,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
-        btnOk = (Button) findViewById(R.id.btnOk);
-        btnOk.setOnClickListener(this);
+        setContentView(R.layout.exemplo_qualifier);
     }
 
     @Override
