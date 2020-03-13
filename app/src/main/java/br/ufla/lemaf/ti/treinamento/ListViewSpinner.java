@@ -1,7 +1,9 @@
 package br.ufla.lemaf.ti.treinamento;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -70,8 +72,19 @@ public class ListViewSpinner extends AppCompatActivity implements View.OnClickLi
     }
 
     @Override
-    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-        habilidades.remove(position);
-        adapterHabilidades.notifyDataSetChanged();
+    public void onItemClick(AdapterView<?> parent, View view, final int position, long id) {
+        AlertDialog.Builder msgBox = new AlertDialog.Builder(this);
+        msgBox.setTitle("Excluindo");
+        msgBox.setIcon(android.R.drawable.ic_menu_delete);
+        msgBox.setMessage("exluir?");
+        msgBox.setPositiveButton("sim", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                habilidades.remove(position);
+                adapterHabilidades.notifyDataSetChanged();
+            }
+        });
+        msgBox.setNegativeButton("Não", null);
+        msgBox.show();
     }
 }

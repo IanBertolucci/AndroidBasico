@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
+import android.widget.Toast;
 import android.widget.Toolbar;
 
 public class MenuActivity extends AppCompatActivity implements Toolbar.OnMenuItemClickListener {
@@ -55,6 +56,10 @@ public class MenuActivity extends AppCompatActivity implements Toolbar.OnMenuIte
             case android.R.id.home:
                 texto = "icone app";
         }
+
+        Toast toast = Toast.makeText(this, texto, Toast.LENGTH_LONG);
+        toast.setGravity(0, 0, 50);
+        toast.show();
 
         txtResultado.setText(texto);
 
