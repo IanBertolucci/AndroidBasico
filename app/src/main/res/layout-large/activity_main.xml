@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <fragment
+            android:id="@+id/fragmento_curso"
+            class="br.ufla.lemaf.ti.treinamento.FragmentoCurso"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+    <fragment
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            class="br.ufla.lemaf.ti.treinamento.FragmentoCursoDetalhe"
+            android:id="@+id/fragmento_curso_detalhe"
+            android:layout_weight="2" />
+</LinearLayout>

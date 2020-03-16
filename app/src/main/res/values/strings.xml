@@ -1,5 +1,4 @@
 <resources>
-    <string name="app_name">Treinamento</string>
     <string name="nome_pessoa">Nome: </string>
     <string name="nome_idioma">Idioma: </string>
     <string name="txt_ingles">Inglês</string>
@@ -33,5 +32,7 @@
     <string name="txtajuda">Ajuda</string>
     <string name="btnData">Selecionar a data</string>
 
+    <string name="app_name">Fragmentos:</string>
+    <string name="txtLabelCurso">Curso selecionado:</string>
 
 </resources>

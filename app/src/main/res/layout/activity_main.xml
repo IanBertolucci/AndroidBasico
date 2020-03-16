@@ -11,68 +11,11 @@
         android:orientation="vertical"
         tools:context=".MainActivity">
 
-    <TextView
-            android:id="@+id/rotuloCurso"
+    <fragment
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/rotuloCurso" />
-
-    <CheckBox
-            android:id="@+id/checkbox1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/checkbox1" />
-
-    <CheckBox
-            android:id="@+id/checkbox2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/checkbox2" />
-
-    <CheckBox
-            android:id="@+id/checkbox3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:text="@string/checkbox3" />
-
-    <TextView
-            android:id="@+id/rotuloInfo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/rotuloInfo" />
-
-    <RadioGroup
-            android:id="@+id/radioGroup"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp">
-
-        <RadioButton
-                android:id="@+id/radioSim"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/txtSim" />
-
-        <RadioButton
-                android:id="@+id/radioNao"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/txtNao" />
-    </RadioGroup>
-
-    <Button
-            android:id="@+id/btnOk"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:text="@string/btnOk" />
-
-    <TextView
-            android:id="@+id/txtResultado"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/txtResposta" />
+            android:layout_height="match_parent"
+            class="br.ufla.lemaf.ti.treinamento.FragmentoCurso"
+            android:id="@+id/fragmento_curso" />
 
 
 </LinearLayout>
