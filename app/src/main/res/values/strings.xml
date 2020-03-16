@@ -41,4 +41,7 @@
     <string name="txtBtnProximo">Próximo</string>
     <string name="txtBtnVoltar">Voltar</string>
 
+    <string name="txtFinalizar">Finalizar</string>
+    <string name="btnTextAvaliar">Avaliar</string>
+
 </resources>
