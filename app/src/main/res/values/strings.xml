@@ -32,7 +32,13 @@
     <string name="txtajuda">Ajuda</string>
     <string name="btnData">Selecionar a data</string>
 
-    <string name="app_name">Fragmentos:</string>
-    <string name="txtLabelCurso">Curso selecionado:</string>
+    <string name="app_name">Intents</string>
+    <string name="btnLigar">Ligar</string>
+    <string name="txtLabelTelefone">Informe um número de telefone:</string>
+
+    <string name="txtLabelNome">Informe seu nome:</string>
+    <string name="txtLabelCurso">Informe o curso:</string>
+    <string name="txtBtnProximo">Próximo</string>
+    <string name="txtBtnVoltar">Voltar</string>
 
 </resources>
