@@ -33,4 +33,22 @@ public class FragmentoCursoDetalhe extends Fragment {
         textViewCurso.setText(curso);
     }
 
+    @Override
+    public void onSaveInstanceState(@NonNull Bundle outState) {
+        super.onSaveInstanceState(outState);
+        TextView textViewCurso = (TextView) getView().findViewById(R.id.textViewCurso);
+        String textoCurso = textViewCurso.getText().toString();
+        outState.putString("curso", textoCurso);
+    }
+
+    @Override
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+
+        if (savedInstanceState != null) {
+            TextView textViewCurso = (TextView) getView().findViewById(R.id.textViewCurso);
+            String nomeCurso = savedInstanceState.getString("curso");
+            textViewCurso.setText(nomeCurso);
+        }
+    }
 }
