@@ -3,11 +3,15 @@ package br.ufla.lemaf.ti.treinamento;
 import android.content.Context;
 import android.os.Bundle;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -58,4 +62,32 @@ public class FragmentoCurso extends Fragment {
             callback.onCourseSelected(id);
         }
     };
+
+    @Override
+    public void onCreateOptionsMenu(@NonNull Menu menu, @NonNull MenuInflater inflater) {
+        inflater.inflate(R.menu.menu_fragmento, menu);
+        super.onCreateOptionsMenu(menu, inflater);
+    }
+
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setHasOptionsMenu(true);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.menuAdicionar2:
+                Toast toast = Toast.makeText(getActivity(), "Menu selecionado: adicionar", Toast.LENGTH_LONG);
+                toast.show();
+                return true;
+            case R.id.menuEditar2:
+                Toast toast2 = Toast.makeText(getActivity(), "Menu selecionado: editar", Toast.LENGTH_LONG);
+                toast2.show();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
 }
